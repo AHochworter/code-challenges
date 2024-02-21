@@ -17,14 +17,34 @@ Small Scale Example:
     => [2, 5]
     
 
-PSEUDOCODE:
-UNDERSTAND: Find the numbers that exist in all 3 arrays. Return those matches as an new array
-    Clarifying Questions: 
-        -What if one of the arrays is empty?
+nums = [1,2,3,4]
 
-MATCH: Includes method? with a logical AND statement
-PLAN:
-    Iterate through nums1, comparision to nums2 AND nums3 - if included in both, push to matchesArray.
+/* Psuedocode
+GOAL: return an array of any/all values which are present in all three arrays.
+INPUT: 3 arrays of equal size
+  - as variable so that we can iterate over them?
+OUTPUT: array of any/all values which are present in all three arrays
+HOW: 
+- iterate through each array
+- compare each value to the other arrays
+- return the value if it is present in all arrays (includes)
+METHODS:
+- filter?  
+  - with includes
+- reduce?
+  - this might work, but feels really thick for the logic
+*/
+
+var runningSum = function(nums) {
+  let sum = 0;
+  console.log('nums', nums)
+    const addNums = nums.map((num) => {
+      return sum += num
+    })
+    return addNums
+}
+
+console.log(runningSum(nums))
      */
 nums1 = [1, 2, 4, 5, 8];
 nums2 = [2, 3, 5, 7, 9];
