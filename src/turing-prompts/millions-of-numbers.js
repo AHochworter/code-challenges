@@ -35,17 +35,16 @@ METHODS:
   - this might work, but feels really thick for the logic
 */
 
-var runningSum = function(nums) {
+var runningSum = function (nums) {
   let sum = 0;
-  console.log('nums', nums)
-    const addNums = nums.map((num) => {
-      return sum += num
-    })
-    return addNums
-}
+  console.log('nums', nums);
+  const addNums = nums.map(num => {
+    return (sum += num);
+  });
+  return addNums;
+};
 
-console.log(runningSum(nums))
-     */
+console.log(runningSum(nums));
 nums1 = [1, 2, 4, 5, 8];
 nums2 = [2, 3, 5, 7, 9];
 nums3 = [1, 2, 5, 8, 9];
