@@ -5,3 +5,9 @@ where n is the size of the array. If there is no such element, the function shou
 
 Input: [3, 3, 4, 2, 4, 4, 2, 4, 4]
 Output: 4 (because 4 appears 5 times which is more than 9/2 times)*/
+
+const findMajorityElement = () => {
+  console.log('Find Majority Element');
+};
+
+export default findMajorityElement;
