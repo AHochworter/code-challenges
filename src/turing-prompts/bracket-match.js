@@ -69,4 +69,6 @@ const doBracketsMatch = bracketString => {
   console.log('out of the loop');
 };
 
-console.log(doBracketsMatch('({[]}{[]})'));
+// console.log(doBracketsMatch('({[]}{[]})'));
+
+export default doBracketsMatch;
