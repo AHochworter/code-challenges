@@ -8,3 +8,9 @@ Output: 12 (because 2 + 4 + 6 = 12)
 Input: [17, 23, 81]
 Output: 0 (because there are no even numbers)
 */
+
+const sumEvenNumbers = () => {
+  console.log('Sum the Even Numbers');
+};
+
+export default sumEvenNumbers;
