@@ -13,4 +13,8 @@ HOW ->  iterate through the array and check each element for a remainder based o
 
 */
 
-function divisibleBy(numbers, divisor) {}
+const divisibleBy = (numbers, divisor) => {
+  console.log('Divisible By');
+};
+
+export default divisibleBy;
