@@ -4,3 +4,9 @@
  Ensure your function accounts for all characters in the input, including whitespace and special characters.
 
  */
+
+const countCharacters = () => {
+  console.log('Counting Characters Prompt');
+};
+
+export default countCharacters;
