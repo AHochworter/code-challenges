@@ -1,7 +1,7 @@
-const arr = [1, 2, 3, [4, 5]];
+// const arr = [1, 2, 3, [4, 5]];
 
 function flattenArray(arr) {
-  console.log('arr', arr);
+  // console.log('arr', arr);
   return arr.reduce((accumulator, currentValue) => {
     if (Array.isArray(currentValue)) {
       return accumulator.concat(flattenArray(currentValue));
@@ -11,7 +11,7 @@ function flattenArray(arr) {
   }, []); // Initial value is an empty array
 }
 
-console.log(flattenArray(arr));
+// console.log(flattenArray(arr));
 
 /* In Ruby and JavaScript, there is a built in method/function to flatten arrays, meaning it makes them one-dimensional. Below are examples of both Ruby and JavaScript: 
 
@@ -34,28 +34,30 @@ PLAN:
       - This is the recursive portion, so send it through again.
       
 */
-array = [1, 2, 3, [[4], 5], [[[6]]]];
+// array = [1, 2, 3, [[4], 5], [[[6]]]];
 
-const flattenArray2 = array => {
-  console.log('array', array);
-  return array.reduce((acc, curVal) => {
-    console.log('acc', acc);
-    //check to see if the curVal is an Array
-    if (Array.isArray(curVal)) {
-      console.log('curVal', curVal);
-      //if true, call flattenArray on it (recursion)
-      return acc.concat(flattenArray2(curVal));
-    } else {
-      // if it's not an Array, concatenate element to accumulator
-      return acc.concat(curVal);
-    }
-  }, []);
-};
+// const flattenArray2 = array => {
+//   // console.log('array', array);
+//   return array.reduce((acc, curVal) => {
+//     // console.log('acc', acc);
+//     //check to see if the curVal is an Array
+//     if (Array.isArray(curVal)) {
+//       // console.log('curVal', curVal);
+//       //if true, call flattenArray on it (recursion)
+//       return acc.concat(flattenArray2(curVal));
+//     } else {
+//       // if it's not an Array, concatenate element to accumulator
+//       return acc.concat(curVal);
+//     }
+//   }, []);
+// };
 
-console.log(flattenArray2(array));
+// console.log(flattenArray2(array));
 
-const wackyFlat = array => {
-  return array.join(',').split(',').map(Number);
-};
+// const wackyFlat = array => {
+//   return array.join(',').split(',').map(Number);
+// };
 
-console.log(wackyFlat(array));
+// console.log(wackyFlat(array));
+
+export default flattenArray;
