@@ -21,13 +21,8 @@ HOW ->
 METHOD -> map first?  Need to sum each inner array, so this first step each inner array should have a number/sum
 
 */
-const accounts = [
-  [1, 2, 3],
-  [3, 2, 1],
-];
 
 var maximumWealth = function (accounts) {
-  console.log('accounts', accounts);
   let addedArray = accounts.map(account => {
     return account.reduce((acc, cur) => {
       return acc + cur;
@@ -39,4 +34,4 @@ var maximumWealth = function (accounts) {
   //now sort highest to lowest and return the 1st element of the addedArray
 };
 
-console.log(maximumWealth(accounts));
+export default maximumWealth;
