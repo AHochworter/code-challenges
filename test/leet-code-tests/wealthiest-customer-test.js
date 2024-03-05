@@ -13,6 +13,6 @@ describe('maximumWealth', () => {
     ];
     const result = maximumWealth(accounts);
     console.log('accounts', accounts);
-    expect(result).to.deep.equal([6, 6]);
+    expect(result).to.equal(6);
   });
 });

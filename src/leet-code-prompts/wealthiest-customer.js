@@ -28,10 +28,12 @@ var maximumWealth = function (accounts) {
       return acc + cur;
     }, 0);
   });
-  return addedArray.sort((a, b) => {
-    a - b;
-  });
   //now sort highest to lowest and return the 1st element of the addedArray
+  // return addedArray.sort((a, b) => {
+  //   a - b;
+
+  //alternatively, find the maximum value directly
+  return Math.max(...addedArray);
 };
 
 export default maximumWealth;
