@@ -36,19 +36,23 @@ HOW ->
 
 */
 
-// const getRNA = string => {
-//   let result = string.split('');
-//   result.forEach(char => {
-//     console.log(char);
-//     char.replaceAll('T', 'U');
-//   });
-//   return result;
-// };
-
 const getRNA = string => {
   // Replace all occurrences of 'T' with 'U'
   let rnaString = string.replaceAll('T', 'U');
   return rnaString;
 };
 
-export default getRNA;
+const getRNA2 = dnaString => {
+  // Convert the string to an array of characters
+  let dnaArray = dnaString.split('');
+
+  // Use map to iterate over each character and replace 'T' with 'U'
+  let rnaArray = dnaArray.map(char => (char === 'T' ? 'U' : char));
+
+  // Convert the array back to a string and return
+  let rnaString = rnaArray.join('');
+
+  return rnaString;
+};
+
+export { getRNA, getRNA2 };
